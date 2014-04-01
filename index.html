@@ -10,40 +10,124 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media="all" /> 
 	<link rel="stylesheet" type="text/css" href="css/usrStyle.css">
 	
-	<!-- Javascript -->
-	<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
-	<script type="text/javascript" src="js/kickstart.js"></script>	
+
 	
 	
 	<title>Los Angeles 2024</title>
 </head>
 
-<body>
-<div class="grid">
+ <body>
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
 
-	<header>
-		<nav>
-			<ul>
-				<h1 class="logo"></h1>
-			</ul>
-		</nav>
-	</header>
+      <!-- Begin page content -->
+      <div class="container">
+        <header>
+          <h1 class="head-logo">Sticky footer</h1>
+        </header>
+        
+        <div class="grid flex">
+        <div class="col_6 ">
+        	<img src="images/JTT_.png" alt="JTT_" width="468" height="411" />
+        </div><!-- col_6 -->
+        
+        <div class="col_6 main-txt houdini">
+        <h2>
+        	LA is bidding for the 2024 Olympic and Paralympic Games! Show Your Support for LA’s Bid.
+        </h2>
+       <p>
+			Los Angeles is a city that has always been about transformation. This is the place where dreams really do come true, for actors and Olympians, young and old, Americans and foreign-born. Today’s LA is a city with a vibrant and growing downtown of residents, restaurants and recreation; a sparkling beach community of artists and tech entrepreneurs; a city connected to itself and the world by a river being restored, a vast new rail system and a reimagined international airport. 
+			</p>
+			<p>  
+The Southern California Committee for the Olympic Games “SCCOG,” in collaboration with LA Mayor, Mayor Eric Garcetti and his team, is proud to put forward LA as a US candidate city for the 2024 Olympic and Paralympic Games.  We will know later this year if LA is to be considered a US bid city by the United States Olympic Committee “USOC”.  Until such time, we continue our efforts to explain to a national and international audience why today’s LA should be considered as the American Bid City.   It’s early days but please show your support and sign up today.  As soon as we hear good news, you will be the first to share our excitement!  Thank you in advance for your support.
+			</p>
+			<a href="#theform">
+        		<button class="showform large blue"><i class="icon-pencil"></i> SIGN UP NOW</button>
+       		</a>
+        
+        </div><!-- Col_6 -->
+        
+        <div class="col_6 hidden houdini">
+        	
+        	<form class="vertical">
+    			<label for="firstname">First Name*</label>
+    			<input id="firstname" type="text" placeholder=”First Name” autofocus required/>
+				<script>
+   				 	if (!("autofocus" in document.createElement("input"))) {
+      				document.getElementById("q").focus();
+    				}
+  				</script>
+    			<label for="lastname">Last Name*</label>
+    			<input id="lastname" type="text" placeholder=”Last Name” required/>
+   				<label for="address">Address</label>
+   				<input id="address" type="text" placeholder=”Address” />
+   				<label for="city">City</label>
+   				<input id="city" type="text" placeholder=”City” />
+   				<label for="state">State</label>
+   				<input id="state" type="text" placeholder=”State” />
+   				<label for="zip">Zip Code*</label>
+   				<input id="zip" type="text" placeholder=”Zip Code” required/>
+   				<label for="email">Email Address*</label>
+   				<input id="email" type="email" placeholder=”Email” required/>
+   				<label for="cellphone">Cellphone</label>
+   				<input id="cellphone" type="tel" placeholder=”Cell Phone” />
+   				<p class="requi">*Required Field</p>
+    			
+    			<button class="large blue" type="submit" value="Go"><i class="icon-ok"></i>SUBMIT</button>
+    			<button class="showform large green" type="submit" ><i class="icon-home"></i>Back Home</button>
+    			
+			</form>
+			
+        </div> <!-- 6-col -->
+        
+        
+        </div><!-- grid -->
+      </div><!-- CONTAINER -->
+	<div id="push" class="clear"></div>
+      
+    </div><!-- wrap -->
 	
-	<section>
+    <div id="footer">
+    <div class="foot-section">
+      <p class="copyright">© 2014 Southern California Committee for the Olympic Games</p>
+      <img src="images/SCCOG.png" alt="SCCOG" width="150" height="95" />
+      </div>
+    
+    </div><!-- footer -->
+</div><!-- WRAP -->
+
+
+
+    <!-- Javascript -->
+	<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
+	<script type="text/javascript" src="js/kickstart.js"></script>	
 	
-		<content>
-		
-		</content>
-		
-	</section>
+	<script>
+		$( ".showform" ).click(function() {
+  		$( "#theform" ).toggle( "slow", function() {
+    		// Animation complete.
+  		});
+  		 $('.houdini').toggle('hidden');
+	});
+	</script> 
+	<script>
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+      </script> 
+   
 
-
-
-	<footer>
-		<p></p>
-	</footer>
-</div> <!-- End Grid -->
-
-</body>
-
+  </body>
 </html>
+

@@ -1,0 +1,108 @@
+html, body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+
+}
+ body {
+ 	background: #009de1 url(../images/BG_1.png) center center fixed; 
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+	font-family: "Arimo", arial, verdana, sans-serif;
+	
+ }
+
+      /* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by it's height */
+  margin: 0 auto -150px;
+}
+
+
+floatLeft{
+	float: left;
+}
+floatRight{
+	float: right;
+}
+.clear { 
+	clear: both;
+}
+img {}
+header {
+	background-color: white;
+	min-height: 154px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin-bottom: 10px;
+	z-index: 99999;
+}
+
+
+.head-logo {
+	max-width: 154px; 
+	min-height: 154px;
+	margin: 0 auto;
+	background: white url(../images/Logo.png) top left no-repeat;
+	text-indent: -9999px;
+	
+	}
+.grid{
+	position: relative;
+	top: 154px;
+}	
+.main-txt {
+	padding-right: 10%;
+}
+.main-txt p {
+	color: white;
+	font-size: 1em;
+	
+}
+.leftwall { 
+	position: fixed; 
+	top: 154px;
+}
+#theform {
+	min-height: 700px;
+	
+}
+.hidden{
+	display: none;
+}
+
+label, .requi {
+	color: white;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+  height: 308px;
+}
+
+#footer {
+	width: 100%;
+	background-color: white;
+	z-index: 99999;
+}
+.foot-section{
+	margin: 0 auto;
+	max-width: 960px;
+}
+footer p, p.copyright {
+	color: #009de1;
+}
+
+.copyright {
+	font-size: .8em;
+	margin-top: 20px;
+	
+}
+
