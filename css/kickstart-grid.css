@@ -24,7 +24,7 @@ padding:0 2em;
 }
 
 .grid.flex{
-width:100%;
+width:960px;
 max-width:100%;
 padding:0 2%;
 padding:2em;
@@ -56,7 +56,7 @@ clear:both;
 margin-left: 0.83333333333333%;
 margin-right: 0.83333333333333%;
 margin-top:0.5em;
-margin-bottom:0.5em;
+margin-bottom:2em;
 float: left;
 display: block;
 }

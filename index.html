@@ -27,59 +27,106 @@
         </header>
         
         <div class="grid flex">
-        <div class="col_6 ">
-        	<img src="images/JTT_.png" alt="JTT_" width="468" height="411" />
+        
+        <div class="col_6 tight">
+        	<img src="images/main-txt.png" alt="main-txt" width="400px" height="417px" />
         </div><!-- col_6 -->
         
-        <div class="col_6 main-txt houdini">
-        <h2>
-        	LA is bidding for the 2024 Olympic and Paralympic Games! Show Your Support for LA’s Bid.
+        <div class="col_6 main-txt tight ">
+        <h2 class="sub_title">
+        	LA is bidding <br/> for the 2024 Olympic <br/> and Paralympic Games! 
         </h2>
        <p>
-			Los Angeles is a city that has always been about transformation. This is the place where dreams really do come true, for actors and Olympians, young and old, Americans and foreign-born. Today’s LA is a city with a vibrant and growing downtown of residents, restaurants and recreation; a sparkling beach community of artists and tech entrepreneurs; a city connected to itself and the world by a river being restored, a vast new rail system and a reimagined international airport. 
+			Los Angeles is a city that has always been about transformation. This is the place where dreams really do come true, for actors and Olympians, young and old, Americans and foreign-born. Today’s LA is a city with a vibrant and growing downtown of residents, restaurants and recreation; a sparkling beach community of artists and tech entrepreneurs; a city connected to itself and the world by a river being restored, a vast new rail system and a reimagined international airport.
 			</p>
 			<p>  
-The Southern California Committee for the Olympic Games “SCCOG,” in collaboration with LA Mayor, Mayor Eric Garcetti and his team, is proud to put forward LA as a US candidate city for the 2024 Olympic and Paralympic Games.  We will know later this year if LA is to be considered a US bid city by the United States Olympic Committee “USOC”.  Until such time, we continue our efforts to explain to a national and international audience why today’s LA should be considered as the American Bid City.   It’s early days but please show your support and sign up today.  As soon as we hear good news, you will be the first to share our excitement!  Thank you in advance for your support.
+The Southern California Committee for the Olympic Games (SCCOG), in collaboration with LA Mayor, Mayor Eric Garcetti and his team, is proud to put forward LA as a US candidate city for the 2024 Olympic and Paralympic Games.  We will know later this year if LA is to be considered a US bid city by the United States Olympic Committee (USOC).  For more information, and to show your support, sign up below. 
 			</p>
-			<a href="#theform">
-        		<button class="showform large blue"><i class="icon-pencil"></i> SIGN UP NOW</button>
-       		</a>
+			
         
         </div><!-- Col_6 -->
         
-        <div class="col_6 hidden houdini">
+        <div class="col_12">
+        	<a href="#theform" class="noline">
+        		<button class="showform trasbtn center-me"> Show Your Support!</button>
+       		</a>
+        </div>
+        
+        <div class="col_6 tight">
+        
+        </div>
+       
+         <div id="theform" class="col_6 tight">
         	
-        	<form class="vertical">
+        	<form method="post" action="data.php" class="vertical">
+        	<fieldset>
     			<label for="firstname">First Name*</label>
-    			<input id="firstname" type="text" placeholder=”First Name” autofocus required/>
+    			
+    			<input id="firstname" name="firstname" type="text" autofocus required/>
 				<script>
    				 	if (!("autofocus" in document.createElement("input"))) {
       				document.getElementById("q").focus();
     				}
   				</script>
+  				<input name="submitted" type="hidden" value="true" />
     			<label for="lastname">Last Name*</label>
-    			<input id="lastname" type="text" placeholder=”Last Name” required/>
+    			<input id="lastname" name="lastname" type="text"  required/>
    				<label for="address">Address</label>
-   				<input id="address" type="text" placeholder=”Address” />
+   				<input id="address" name="address" type="text" />
    				<label for="city">City</label>
-   				<input id="city" type="text" placeholder=”City” />
+   				<input id="city" name="city" type="text"  />
    				<label for="state">State</label>
-   				<input id="state" type="text" placeholder=”State” />
+   				<input id="state" name="state" type="text" />
    				<label for="zip">Zip Code*</label>
-   				<input id="zip" type="text" placeholder=”Zip Code” required/>
+   				<input id="zip" name="zipcode" type="text"  required/>
    				<label for="email">Email Address*</label>
-   				<input id="email" type="email" placeholder=”Email” required/>
-   				<label for="cellphone">Cellphone</label>
-   				<input id="cellphone" type="tel" placeholder=”Cell Phone” />
-   				<p class="requi">*Required Field</p>
+   				<input id="email" name="email" type="email" required/>
+   				<label for="cellphone">Cell Phone</label>
+   				<input id="cellphone" name="cellphone" type="tel"  />
+   				
+   				<p class="requi">*Required Fields</p>
+   				
+				
+				<input type="checkbox" id="check2" />
+				<label for="check1" class="inline smll_txt">I prefer messages via mobile SMS</label>
+				
+    			<button class="trasbtn" type="submit" value="Submit"></i>SUBMIT</button>
     			
-    			<button class="large blue" type="submit" value="Go"><i class="icon-ok"></i>SUBMIT</button>
-    			<button class="showform large green" type="submit" ><i class="icon-home"></i>Back Home</button>
-    			
+    			</fieldset>
 			</form>
 			
         </div> <!-- 6-col -->
+       
+        <div class="col_6 alignCenter tight">
+        <h3>Bid Team Strategy Team Leaders</h3>
+        	<ul>
+        		<li>Barry A. Sanders</li>
+        		<li>David Simon</li>
+        		<li>Rhonda Brauer</li>
+        		<li>Andrew W. Knox</li>
+        		<li>Marc Stern</li>
+        		<li>Peter Vidmar</li>
+        		<li>Richard Wirthlin</li>
+        		<li>David A. McGowan</li>
+        		<li>J. Eugene Salomon, Jr</li>
+        		<li>Fiona Posell</li>
+        	</ul>
+        </div><!-- col_6 -->
         
+        <div class="col_6 alignCenter tight" >
+        <h3>Advisory Committee Co-Chairs</h3>
+        	<ul >
+        		<li>Kathleen L.  Brown, Partner, Manatt, Phelps & Phillips</li>
+        		<li>Michael S. Burke, CEO of AECOM</li>
+        		<li>Robert A. Iger, CEO of Walt Disney Company</li>
+        		<li>Peter Kim, CEO of Hudson Jeans</li>
+        		<li>Peter S. Lowy, Co-CEO of Westfield Group</li>
+        		<li>Marc I. Stern, Chairman of TCW Group</li>
+        		<li>Bryan G. Stockton, CEO of Mattel, Inc.</li>
+        	</ul>
+        </div><!-- col_6 -->
+        
+       
         
         </div><!-- grid -->
       </div><!-- CONTAINER -->
@@ -90,7 +137,7 @@ The Southern California Committee for the Olympic Games “SCCOG,” in collabor
     <div id="footer">
     <div class="foot-section">
       <p class="copyright">© 2014 Southern California Committee for the Olympic Games</p>
-      <img src="images/SCCOG.png" alt="SCCOG" width="150" height="95" />
+      <img class="alignCenter" src="images/SCCOG.png" alt="SCCOG" width="150" height="95" />
       </div>
     
     </div><!-- footer -->
@@ -102,14 +149,7 @@ The Southern California Committee for the Olympic Games “SCCOG,” in collabor
 	<script type='text/javascript' src='http://code.jquery.com/jquery-latest.min.js'></script>
 	<script type="text/javascript" src="js/kickstart.js"></script>	
 	
-	<script>
-		$( ".showform" ).click(function() {
-  		$( "#theform" ).toggle( "slow", function() {
-    		// Animation complete.
-  		});
-  		 $('.houdini').toggle('hidden');
-	});
-	</script> 
+	
 	<script>
       $(function() {
         $('a[href*=#]:not([href=#])').click(function() {

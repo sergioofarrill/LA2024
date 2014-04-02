@@ -1,8 +1,21 @@
+@font-face {
+	font-family: 'Conv_champion-htf-welterweight';
+	src: url('fonts/champion-htf-welterweight.eot');
+	src: local('☺'), url('fonts/champion-htf-welterweight.woff') format('woff'), url('fonts/champion-htf-welterweight.ttf') format('truetype'), url('fonts/champion-htf-welterweight.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+ 
+@import url(http://fonts.googleapis.com/css?family=Anton);
+
 html, body {
         height: 100%;
         /* The html and body elements cannot have any padding or margin. */
 
 }
+
+
  body {
  	background: #009de1 url(../images/BG_1.png) center center fixed; 
    -webkit-background-size: cover;
@@ -10,8 +23,16 @@ html, body {
    -o-background-size: cover;
    background-size: cover;
 	font-family: "Arimo", arial, verdana, sans-serif;
+	color:white;
 	
  }
+
+button {
+	font-family: 'Conv_champion-htf-welterweight', Sans-Serif;
+	line-height: 1.2px;
+	letter-spacing: 0.0625em;
+	font-size: 1.5em;
+}
 
       /* Wrapper for page content to push down footer */
 #wrap {
@@ -22,7 +43,28 @@ html, body {
   margin: 0 auto -150px;
 }
 
+h3 {
+	font-size: 1.2em;
+}
+ul li {
+	display: block;
+}
+.smll_txt{
+	font-size: .8em;
+}
+.main-title{
+	font-size: 8em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
 
+.alignCenter	{
+	margin: 0 auto;
+	text-align: center;
+}
+.center-me{
+	display: block; margin: auto;
+}
 floatLeft{
 	float: left;
 }
@@ -37,14 +79,19 @@ header {
 	background-color: white;
 	min-height: 154px;
 	width: 100%;
-	position: fixed;
 	top: 0;
 	left: 0;
 	margin-bottom: 10px;
 	z-index: 99999;
 }
 
-
+.caps, .sub_title {
+	text-transform: uppercase;
+}
+.sub_title{
+	font-size: 2em;
+	line-height: 30px;
+}
 .head-logo {
 	max-width: 154px; 
 	min-height: 154px;
@@ -54,14 +101,15 @@ header {
 	
 	}
 .grid{
+
 	position: relative;
-	top: 154px;
+	top: 20px;
 }	
 .main-txt {
 }
 .main-txt p {
 	color: white;
-	font-size: 1em;
+	font-size: 1.1em;
 	
 }
 .leftwall { 
@@ -69,8 +117,11 @@ header {
 	top: 154px;
 }
 #theform {
-	min-height: 700px;
 	
+	
+}
+.tight{
+	max-width: 400px;
 }
 .hidden{
 	display: none;
@@ -79,14 +130,42 @@ header {
 label, .requi {
 	color: white;
 }
+.trasbtn {
+	color: white;
+	background: transparent;
+	border: 1px solid white; 
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	padding: 17px;
+	text-transform: uppercase;
+	display: block;
+	margin-top: 20px;
+}
+
+.trasbtn:hover {
+	color: #ffeb00;
+	background: transparent;
+	border: 1px solid #ffeb00; 
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	
+}
+
+a.noline{
+	text-decoration: none;
+}
+
+
 
 /* Set the fixed height of the footer here */
-#push,
-#footer {
+#push {
   height: 308px;
 }
 
 #footer {
+	height: 154px;
 	width: 100%;
 	background-color: white;
 	z-index: 99999;
@@ -94,6 +173,11 @@ label, .requi {
 .foot-section{
 	margin: 0 auto;
 	max-width: 960px;
+	padding-top: 5px;
+}
+.foot-section img{
+	display:block;
+    margin:auto;
 }
 footer p, p.copyright {
 	color: #009de1;
@@ -102,6 +186,7 @@ footer p, p.copyright {
 .copyright {
 	font-size: .8em;
 	margin-top: 20px;
+	text-align: center;
 	
 }
 

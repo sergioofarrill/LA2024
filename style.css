@@ -13,8 +13,8 @@
 	OVERRIDES
 -----------------------------------*/
 h1,h2,h3,h4,h5,h6{
-font-family: "Arimo", arial, verdana, sans-serif;
-font-weight:bolder;color:white; line-height: 50px;
+font-family: 'Conv_champion-htf-welterweight', 'arial', Sans-Serif;
+font-weight:bolder;color:white; 
 }
 
 thead th,
